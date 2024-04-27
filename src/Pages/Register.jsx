@@ -6,6 +6,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { useForm } from "react-hook-form";
 import { useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
+import { Fade } from "react-awesome-reveal";
 
 const Register = () => {
 
@@ -62,7 +63,7 @@ const Register = () => {
                 <div className="absolute inset-0 bg-cover bg-center z-0" style={{ backgroundImage: `url(https://i.ibb.co/2PdSp86/pexels-nickcollins-3006340.jpg)` }}></div>
                 <div className="hero-overlay absolute inset-0 bg-black opacity-50"></div>
                 <div className="relative z-10">
-                    <h2 className="text-white font-bold text-center text-3xl mb-8">Register Now !</h2>
+                    <h2 className="text-white font-bold text-center text-3xl mb-8"><Fade>Register Now !</Fade></h2>
                     <form onSubmit={handleSubmit(onSubmit)} className="max-w-md mx-auto">
                         <div className="mb-4">
                             <label className="text-white">Name</label>

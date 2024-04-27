@@ -10,6 +10,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import SocialLogin from "../components/SocialLogin";
+import { Fade } from "react-awesome-reveal";
 
 const Login = () => {
 
@@ -50,7 +51,7 @@ const Login = () => {
             </Helmet> */}
          <div className="p-14 my-10" style={{ backgroundImage: `url(https://i.ibb.co/2PdSp86/pexels-nickcollins-3006340.jpg)`,backgroundRepeat: 'no-repeat',backgroundSize: 'cover', }}>
             <div>
-                <h2 className="text-center font-bold  text-white text-3xl my-10">Login Now !</h2>
+                <h2 className="text-center font-bold  text-white text-3xl my-10"><Fade>Login Now !</Fade></h2>
 
                 <form onSubmit={handleSubmit(onSubmit)} className="md:3/4 lg:w-1/2 mx-auto">
 
