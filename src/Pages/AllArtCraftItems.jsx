@@ -1,10 +1,12 @@
+import { Fade } from "react-awesome-reveal";
 
 
 const AllArtCraftItems = () => {
     return (
-        <div>
-           <h2>All Art & craft Items</h2> 
-        </div>
+
+        <Fade>
+            <p>I will gently appear as I enter the viewport</p>
+        </Fade>
     );
 };
 
