@@ -41,7 +41,7 @@ const Register = () => {
                 toast.success("Registration successful!");
                     setTimeout(()=>{
                         navigate(location?.state? location.state:'/')
-                    },3000)
+                    },2000)
                     
             })
             .catch(error => {
@@ -57,7 +57,7 @@ const Register = () => {
                 <title>ArtHive || Register</title>
             </Helmet> */}
             <div className="relative overflow-hidden bg-gray-900 rounded-lg shadow-lg p-8">
-                <div className="absolute inset-0 bg-cover bg-center z-0" style={{ backgroundImage: `url(https://i.ibb.co/GkJGyJr/78cd8445440169-5607a34add678.jpg)` }}></div>
+                <div className="absolute inset-0 bg-cover bg-center z-0" style={{ backgroundImage: `url(https://i.ibb.co/2PdSp86/pexels-nickcollins-3006340.jpg)` }}></div>
                 <div className="hero-overlay absolute inset-0 bg-black opacity-50"></div>
                 <div className="relative z-10">
                     <h2 className="text-white font-bold text-center text-3xl mb-8">Register Now !</h2>
@@ -85,7 +85,7 @@ const Register = () => {
                             </button>
                             {errors.password && <span className="text-red-500">This field is required</span>}
                         </div>
-                        <div className="mb-4">
+                        <div className="mb-4 mt-10">
                             <button type="submit" className="btn btn-primary w-full">Register</button>
                         </div>
                     </form>
