@@ -24,11 +24,11 @@ const router = createBrowserRouter([
                 element: <Home></Home>,
                 loader:()=>fetch('http://localhost:5000/craftSection')
             },
-            // {
-            //     path:"/home/:id",
-            //     element:<PrivateRoutes><Details></Details></PrivateRoutes>,
-            //     loader:
-            // },
+            {
+                path:"/details/:id",
+                element:<PrivateRoutes><Details></Details></PrivateRoutes>,
+                loader:({params})=>fetch(`http://localhost:5000/craftSection/${params.id}`)
+            },
             {
                 path: '/login',
                 element: <Login></Login>,

@@ -46,7 +46,7 @@ const AddCraftItem = () => {
 
 
     return (
-        <div className="bg-blue-400 p-8 mt-10">
+        <div className=" p-8 mt-10 " style={{ backgroundImage: `url(https://i.ibb.co/ydc4L4r/pexels-polina-kovaleva-6109124.jpg)`,backgroundRepeat: 'no-repeat',backgroundSize: 'cover', }}>
             <div className="max-w-xl mx-auto">
                 <h2 className="text-2xl font-bold mb-4 text-white text-center"><Fade>Add Craft Item</Fade></h2>
                 <form onSubmit={handleAddCraft}>
