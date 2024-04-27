@@ -44,6 +44,7 @@ const Navbar = () => {
                     {navLinks}
                 </ul>
             </div>
+            
             <div className="navbar-end">
                 
             {user ? (
