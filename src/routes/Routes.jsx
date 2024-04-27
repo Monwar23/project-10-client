@@ -11,6 +11,7 @@ import AddCraftItem from "../Pages/AddCraftItem";
 import MyArtCraftLists from "../Pages/MyArtCraftLists";
 import AllArtCraftItems from "../Pages/AllArtCraftItems";
 import PrivateRoutes from "../Private/PrivateRoutes";
+import Details from "../Pages/Details";
 
 const router = createBrowserRouter([
     {
@@ -21,7 +22,13 @@ const router = createBrowserRouter([
             {
                 path: '/',
                 element: <Home></Home>,
+                loader:()=>fetch('http://localhost:5000/craftSection')
             },
+            // {
+            //     path:"/home/:id",
+            //     element:<PrivateRoutes><Details></Details></PrivateRoutes>,
+            //     loader:
+            // },
             {
                 path: '/login',
                 element: <Login></Login>,

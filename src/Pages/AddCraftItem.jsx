@@ -36,8 +36,9 @@ const AddCraftItem = () => {
             .then(res => res.json())
             .then(data => {
                 if (data?.insertedId) {
-                    toast('Craft Item Successfully')
+                    toast('Craft Item Added Successfully')
                 }
+                form.reset()
             })
 
     }
