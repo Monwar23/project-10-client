@@ -48,7 +48,7 @@ const Login = () => {
         {/* <Helmet>
                 <title>HomeSpotter || Login</title>
             </Helmet> */}
-         <div className="p-14 mt-10" style={{ backgroundImage: `url(https://i.ibb.co/2PdSp86/pexels-nickcollins-3006340.jpg)`,backgroundRepeat: 'no-repeat',backgroundSize: 'cover', }}>
+         <div className="p-14 my-10" style={{ backgroundImage: `url(https://i.ibb.co/2PdSp86/pexels-nickcollins-3006340.jpg)`,backgroundRepeat: 'no-repeat',backgroundSize: 'cover', }}>
             <div>
                 <h2 className="text-center font-bold  text-white text-3xl my-10">Login Now !</h2>
 

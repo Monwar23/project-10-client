@@ -1,7 +1,15 @@
 import { Link, NavLink } from "react-router-dom";
+import UseAuth from "../Hooks/UseAuth";
 
 
 const Navbar = () => {
+
+    const {user,  logOut } = UseAuth()
+
+    const handleSignOut = () => {
+        logOut()
+
+    }
 
     const navLinks = <>
              <li><NavLink className={({ isActive }) =>
@@ -16,12 +24,6 @@ const Navbar = () => {
         <li><NavLink className={({ isActive }) =>
             isActive ? 'text-blue-600 border border-blue-600 font-semibold' : 'font-semibold'
         } to="/myArtCraftList">My Art&Craft List</NavLink></li>
-        <li><NavLink className={({ isActive }) =>
-            isActive ? 'text-blue-600 border border-blue-600 font-semibold' : 'font-semibold'
-        } to="/login">Login</NavLink></li>
-        <li><NavLink className={({ isActive }) =>
-            isActive ? 'text-blue-600 border border-blue-600 font-semibold' : 'font-semibold'
-        } to="/register">Register</NavLink></li>
     </>
 
     return (
@@ -44,15 +46,35 @@ const Navbar = () => {
             </div>
             <div className="navbar-end">
                 
-                {/* {
-                    user ?
-                        <button className="btn bg-blue-600 text-white text-lg" onClick={handleSignOut}>Sign Out</button>
-                        :
+            {user ? (
+                    <div className="flex items-center">
+                        <img
+                            src={user.photoURL}
+                            alt={user.displayName}
+                            title={user.displayName}
+                            className="rounded-full h-10 w-10 cursor-pointer"
+                        />
+                        <button
+                            className="btn bg-blue-600 text-white text-lg ml-2"
+                            onClick={handleSignOut}
+                        >
+                            Log Out
+                        </button>
+                    </div>
+                ) : (
+                    <>
                         <Link to="/login">
-                            <button className="btn bg-blue-600 text-white text-lg">Login</button>
+                            <button className="btn bg-blue-600 text-white text-lg">
+                                Login
+                            </button>
                         </Link>
-                } */}
-
+                        <Link to="/register">
+                            <button className="btn bg-blue-600 text-white text-lg ml-2">
+                                Register
+                            </button>
+                        </Link>
+                    </>
+                )}
             </div>
         </div>
     );

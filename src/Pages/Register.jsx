@@ -1,5 +1,5 @@
 // import { Helmet } from 'react-helmet';
-import { Link, useLocation, useNavigation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import UseAuth from "../Hooks/UseAuth";
 import { ToastContainer, toast } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
@@ -11,7 +11,7 @@ const Register = () => {
 
     const {createUser}= UseAuth()
     const location=useLocation()
-    const navigate=useNavigation()
+    const navigate=useNavigate()
 
 
     const {
@@ -39,9 +39,11 @@ const Register = () => {
             .then(result => {
                 console.log(result.user);
                 toast.success("Registration successful!");
-                    setTimeout(()=>{
-                        navigate(location?.state? location.state:'/')
-                    },2000)
+
+                setTimeout(()=>{
+                    navigate(location?.state? location.state:'/')
+                },3000)
+
                     
             })
             .catch(error => {
@@ -56,7 +58,7 @@ const Register = () => {
             {/* <Helmet>
                 <title>ArtHive || Register</title>
             </Helmet> */}
-            <div className="relative overflow-hidden bg-gray-900 rounded-lg shadow-lg p-8">
+            <div className="relative overflow-hidden bg-gray-900 rounded-lg shadow-lg p-14 my-10">
                 <div className="absolute inset-0 bg-cover bg-center z-0" style={{ backgroundImage: `url(https://i.ibb.co/2PdSp86/pexels-nickcollins-3006340.jpg)` }}></div>
                 <div className="hero-overlay absolute inset-0 bg-black opacity-50"></div>
                 <div className="relative z-10">
