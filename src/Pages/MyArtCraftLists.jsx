@@ -6,6 +6,7 @@ import { IoMdCheckbox, IoMdCheckboxOutline } from "react-icons/io";
 import { RiPriceTag3Line } from "react-icons/ri";
 import { FaToggleOff, FaToggleOn } from "react-icons/fa";
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
+import Swal from "sweetalert2";
 
 
 const MyArtCraftLists = () => {
@@ -27,6 +28,27 @@ const MyArtCraftLists = () => {
     setFilter(e.target.value);
   };
 
+
+  const handleDelete=_id=>{
+    console.log(_id);
+    Swal.fire({
+      title: "Are you sure?",
+      text: "You won't be able to revert this!",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Yes, delete it!"
+    }).then((result) => {
+      if (result.isConfirmed) {
+        Swal.fire({
+          title: "Deleted!",
+          text: "Your file has been deleted.",
+          icon: "success"
+        });
+      }
+    });
+  }
 
   
 
@@ -119,7 +141,9 @@ const MyArtCraftLists = () => {
                       <span className="tooltip">Edit</span>
                     </button>
                   </Link>
-                  <button className="text-red-500 hover:text-red-600 transition duration-300">
+                  <button onClick={()=>{
+                    handleDelete(craft._id)
+                  }} className="text-red-500 hover:text-red-600 transition duration-300">
                     <BsTrash />
                     <span className="tooltip">Delete</span>
                   </button>
