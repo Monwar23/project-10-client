@@ -27,7 +27,7 @@ const Home = () => {
 
         <Fade>
         <div className="mt-10">
-            <h2 className="text-3xl font-bold text-center">Welcome to our Craft Items section! </h2>
+            <h2 className="text-3xl text-blue-400 font-bold text-center">Welcome to our Craft Items section! </h2>
             <p className="text-center mt-4"> Explore a variety of beautifully crafted items that will spark your creativity and add a touch of charm to your projects. </p>
         </div>
         </Fade>
@@ -39,7 +39,7 @@ const Home = () => {
        </div>
        <Fade>
         <div className="mt-14">
-            <h2 className="text-3xl font-bold text-center">
+            <h2 className="text-3xl text-blue-400 font-bold text-center">
 Explore Art & Craft Subcategories</h2>
             <p className="text-center mt-4">Dive into the world of creativity with our diverse range of art & craft subcategories. Each subcategory offers unique opportunities for expression and discovery.</p>
         </div>
