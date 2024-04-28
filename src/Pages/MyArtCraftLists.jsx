@@ -15,6 +15,8 @@ const MyArtCraftLists = () => {
   const [crafts, setCrafts] = useState([]);
   const [filter, setFilter] = useState("all");
 
+const [control,setControl]=useState(false)
+
   useEffect(() => {
 
     fetch(`http://localhost:5000/craftSection/email/${user?.email}`)
@@ -22,7 +24,7 @@ const MyArtCraftLists = () => {
       .then(data => {
         setCrafts(data)
       })
-  }, [user]);
+  }, [user,control]);
 
   const handleFilterChange = (e) => {
     setFilter(e.target.value);
@@ -54,6 +56,7 @@ const MyArtCraftLists = () => {
                 text: "Your file has been deleted.",
                 icon: "success"
               });
+              setControl(!control)
             }
           })
       }
