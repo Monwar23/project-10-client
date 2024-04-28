@@ -1,4 +1,4 @@
-// import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet';
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import UseAuth from "../Hooks/UseAuth";
 import { ToastContainer, toast } from 'react-toastify';
@@ -56,9 +56,9 @@ const Register = () => {
 
     return (
         <div>
-            {/* <Helmet>
+            <Helmet>
                 <title>ArtHive || Register</title>
-            </Helmet> */}
+            </Helmet>
             <div className="relative overflow-hidden bg-gray-900 rounded-lg shadow-lg p-14 my-10">
                 <div className="absolute inset-0 bg-cover bg-center z-0" style={{ backgroundImage: `url(https://i.ibb.co/2PdSp86/pexels-nickcollins-3006340.jpg)` }}></div>
                 <div className="hero-overlay absolute inset-0 bg-black opacity-50"></div>

@@ -1,4 +1,5 @@
 import { Fade } from "react-awesome-reveal";
+import { Helmet } from "react-helmet";
 import { useLoaderData } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -55,7 +56,11 @@ const Update = () => {
     }
 
     return (
-        <div className=" p-8 mt-10 " style={{ backgroundImage: `url(https://i.ibb.co/ydc4L4r/pexels-polina-kovaleva-6109124.jpg)`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', }}>
+        <div>
+             <Helmet>
+                <title>ArtHive || Update</title>
+            </Helmet>
+            <div className=" p-8 mt-10 " style={{ backgroundImage: `url(https://i.ibb.co/ydc4L4r/pexels-polina-kovaleva-6109124.jpg)`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', }}>
         <div className="max-w-xl lg:max-w-5xl mx-auto">
             <h2 className="text-2xl font-bold mb-4 text-white text-center"><Fade>Update Craft Item</Fade></h2>
             <form onSubmit={handleUpdateCraft}>
@@ -120,6 +125,7 @@ const Update = () => {
             <ToastContainer></ToastContainer>
         </div>
     </div>
+        </div>
     );
 };
 

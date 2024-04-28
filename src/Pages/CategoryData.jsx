@@ -3,6 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import {  FaStar } from 'react-icons/fa';
 import 'animate.css';
 import { Fade } from 'react-awesome-reveal';
+import { Helmet } from 'react-helmet';
 
 
 const CategoryData = () => {
@@ -18,7 +19,11 @@ const CategoryData = () => {
     }, [subcategory_name]);
 
     return (
-        <div className='mt-10'>
+       <div>
+         <Helmet>
+                <title>ArtHive || Category Data</title>
+            </Helmet>
+         <div className='mt-10'>
            <Fade>
            <h2 className="text-2xl font-bold mb-6 text-center text-blue-700">{subcategory_name}</h2>
            </Fade>
@@ -46,6 +51,7 @@ const CategoryData = () => {
                 ))}
             </div>
         </div>
+       </div>
     );
 };
 

@@ -4,6 +4,7 @@ import CraftItemSection from "../components/CraftItemSection";
 import ArtCraftSection from "../components/ArtCraftSection";
 import { useEffect, useState } from "react";
 import { Fade } from "react-awesome-reveal";
+import { Helmet } from "react-helmet";
 
 
 const Home = () => {
@@ -23,6 +24,9 @@ const Home = () => {
 
     return (
         <div>
+             <Helmet>
+                <title>ArtHive || Home</title>
+            </Helmet>
         <Banner></Banner>
 
         <Fade>

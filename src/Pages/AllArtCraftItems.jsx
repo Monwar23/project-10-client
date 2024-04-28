@@ -1,11 +1,16 @@
 import { Fade } from "react-awesome-reveal";
+import { Helmet } from "react-helmet";
 import { Link, useLoaderData } from "react-router-dom";
 
 const AllArtCraftItems = () => {
     const crafts = useLoaderData();
 
     return (
-        <Fade>
+        <div>
+             <Helmet>
+                <title>ArtHive || All Art & Craft Item</title>
+            </Helmet>
+            <Fade>
             <div className="container mx-auto py-8">
                 <h2 className="text-3xl font-bold mb-8 text-center text-blue-500">All Art and Craft Items</h2>
                 <div className="overflow-x-auto">
@@ -40,6 +45,7 @@ const AllArtCraftItems = () => {
                 </div>
             </div>
         </Fade>
+        </div>
     );
 };
 

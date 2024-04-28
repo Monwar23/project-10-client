@@ -1,4 +1,4 @@
-// import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet";
 
 import { Link } from "react-router-dom";
 
@@ -46,9 +46,9 @@ const Login = () => {
 
     return (
         <div>
-        {/* <Helmet>
+        <Helmet>
                 <title>HomeSpotter || Login</title>
-            </Helmet> */}
+            </Helmet>
          <div className="p-14 my-10" style={{ backgroundImage: `url(https://i.ibb.co/2PdSp86/pexels-nickcollins-3006340.jpg)`,backgroundRepeat: 'no-repeat',backgroundSize: 'cover', }}>
             <div>
                 <h2 className="text-center font-bold  text-white text-3xl my-10"><Fade>Login Now !</Fade></h2>

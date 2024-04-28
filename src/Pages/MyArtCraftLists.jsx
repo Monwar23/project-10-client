@@ -7,6 +7,7 @@ import { RiPriceTag3Line } from "react-icons/ri";
 import { FaToggleOff, FaToggleOn } from "react-icons/fa";
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 import Swal from "sweetalert2";
+import { Helmet } from "react-helmet";
 
 
 const MyArtCraftLists = () => {
@@ -66,7 +67,11 @@ const [control,setControl]=useState(false)
 
 
   return (
-    <div className="container mx-auto mt-10">
+    <div>
+       <Helmet>
+                <title>ArtHive || My Art & Craft Item</title>
+            </Helmet>
+      <div className="container mx-auto mt-10">
       <div className="flex justify-center mt-4 mb-8">
         <select
           value={filter}
@@ -170,6 +175,7 @@ const [control,setControl]=useState(false)
             </div>
           ))}
       </div>
+    </div>
     </div>
   );
 };

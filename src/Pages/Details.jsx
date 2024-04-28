@@ -4,6 +4,7 @@ import { AiFillClockCircle, AiFillStar } from "react-icons/ai";
 import { IoIosCheckmarkCircle } from "react-icons/io";
 import { BsCircleFill } from "react-icons/bs";
 import Reveal from "react-awesome-reveal";
+import { Helmet } from "react-helmet";
 
 const Details = () => {
 
@@ -23,7 +24,11 @@ const Details = () => {
     } = craft;
 
     return (
-        <motion.div
+        <div>
+             <Helmet>
+                <title>ArtHive || Details</title>
+            </Helmet>
+            <motion.div
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
@@ -55,6 +60,7 @@ const Details = () => {
             </div>
         </Reveal>
     </motion.div>
+        </div>
     );
 };
 

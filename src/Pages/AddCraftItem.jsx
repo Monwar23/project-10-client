@@ -2,6 +2,7 @@ import { Fade } from "react-awesome-reveal";
 import UseAuth from "../Hooks/UseAuth";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { Helmet } from "react-helmet";
 
 
 
@@ -46,7 +47,11 @@ const AddCraftItem = () => {
 
 
     return (
-        <div className=" p-8 mt-10 " style={{ backgroundImage: `url(https://i.ibb.co/ydc4L4r/pexels-polina-kovaleva-6109124.jpg)`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', }}>
+        <div>
+             <Helmet>
+                <title>ArtHive || Add Craft Item</title>
+            </Helmet>
+            <div className=" p-8 mt-10 " style={{ backgroundImage: `url(https://i.ibb.co/ydc4L4r/pexels-polina-kovaleva-6109124.jpg)`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', }}>
             <div className="lg:max-w-5xl max-w-xl mx-auto">
                 <h2 className="text-2xl font-bold mb-4 text-white text-center"><Fade>Add Craft Item</Fade></h2>
                 <form onSubmit={handleAddCraft}>
@@ -121,6 +126,7 @@ const AddCraftItem = () => {
                 </form>
                 <ToastContainer></ToastContainer>
             </div>
+        </div>
         </div>
     );
 };
