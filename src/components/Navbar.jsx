@@ -18,12 +18,16 @@ const Navbar = () => {
         <li><NavLink className={({ isActive }) =>
             isActive ? 'text-blue-600 border border-blue-600 font-semibold' : 'font-semibold'
         } to="/allArtCraftItems">All Art & craft Items</NavLink></li>
-        <li><NavLink className={({ isActive }) =>
-            isActive ? 'text-blue-600 border border-blue-600 font-semibold' : 'font-semibold'
-        } to="/addCraftItem">Add Craft Item</NavLink></li>
-        <li><NavLink className={({ isActive }) =>
+      {
+        user &&   <li><NavLink className={({ isActive }) =>
+        isActive ? 'text-blue-600 border border-blue-600 font-semibold' : 'font-semibold'
+    } to="/addCraftItem">Add Craft Item</NavLink></li>
+      }
+        {
+            user && <li><NavLink className={({ isActive }) =>
             isActive ? 'text-blue-600 border border-blue-600 font-semibold' : 'font-semibold'
         } to="/myArtCraftList">My Art&Craft List</NavLink></li>
+        }
     </>
 
     return (
