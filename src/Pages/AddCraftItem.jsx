@@ -46,7 +46,7 @@ const AddCraftItem = () => {
 
 
     return (
-        <div className=" p-8 mt-10 " style={{ backgroundImage: `url(https://i.ibb.co/ydc4L4r/pexels-polina-kovaleva-6109124.jpg)`,backgroundRepeat: 'no-repeat',backgroundSize: 'cover', }}>
+        <div className=" p-8 mt-10 " style={{ backgroundImage: `url(https://i.ibb.co/ydc4L4r/pexels-polina-kovaleva-6109124.jpg)`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', }}>
             <div className="max-w-xl mx-auto">
                 <h2 className="text-2xl font-bold mb-4 text-white text-center"><Fade>Add Craft Item</Fade></h2>
                 <form onSubmit={handleAddCraft}>
@@ -60,8 +60,17 @@ const AddCraftItem = () => {
                     </div>
                     <div className="mb-3">
                         <label htmlFor="subcategory_name" className="text-white block font-medium">Subcategory Name</label>
-                        <input type="text" id="subcategory_name" name="subcategory_name" className="mt-1 block w-full  rounded-md shadow-sm h-10 px-2" />
+                        <select id="subcategory_name" name="subcategory_name" className="mt-1 block w-full rounded-md shadow-sm h-10 px-2">
+                            <option value="Landscape Painting">Landscape Painting</option>
+                            <option value="Portrait Drawing">Portrait Drawing</option>
+                            <option value="Portrait Canvas">Portrait Canvas</option>
+                            <option value="Watercolour Painting">Watercolour Painting</option>
+                            <option value="Oil Painting">Oil Painting</option>
+                            <option value="Charcoal Sketching">Charcoal Sketching</option>
+                            <option value="Cartoon Drawing">Cartoon Drawing</option>
+                        </select>
                     </div>
+
                     <div className="mb-3">
                         <label htmlFor="short_description" className="block font-medium text-white">Short Description</label>
                         <textarea id="short_description" name="short_description" rows="3" className="mt-1 block w-full  rounded-md shadow-sm px-2"></textarea>
