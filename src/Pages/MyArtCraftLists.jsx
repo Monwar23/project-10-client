@@ -11,17 +11,17 @@ import Swal from "sweetalert2";
 
 const MyArtCraftLists = () => {
 
-  const {user}=UseAuth()
+  const { user } = UseAuth()
   const [crafts, setCrafts] = useState([]);
   const [filter, setFilter] = useState("all");
 
   useEffect(() => {
-   
+
     fetch(`http://localhost:5000/craftSection/email/${user?.email}`)
-    .then(res=>res.json())
-    .then(data=>{
-      setCrafts(data)
-    })
+      .then(res => res.json())
+      .then(data => {
+        setCrafts(data)
+      })
   }, [user]);
 
   const handleFilterChange = (e) => {
@@ -29,8 +29,7 @@ const MyArtCraftLists = () => {
   };
 
 
-  const handleDelete=_id=>{
-    console.log(_id);
+  const handleDelete = _id => {
     Swal.fire({
       title: "Are you sure?",
       text: "You won't be able to revert this!",
@@ -41,20 +40,30 @@ const MyArtCraftLists = () => {
       confirmButtonText: "Yes, delete it!"
     }).then((result) => {
       if (result.isConfirmed) {
-        // Swal.fire({
-        //   title: "Deleted!",
-        //   text: "Your file has been deleted.",
-        //   icon: "success"
-        // });
-        console.log("delete confirm");
+
+
+        fetch(`http://localhost:5000/craftSection/${_id}`,{
+          method:'DELETE'
+        })
+          .then(res => res.json())
+          .then(data => {
+            console.log(data);
+            if (data.deletedCount > 0) {
+              Swal.fire({
+                title: "Deleted!",
+                text: "Your file has been deleted.",
+                icon: "success"
+              });
+            }
+          })
       }
     });
   }
 
-  
 
-    return (
-      <div className="container mx-auto mt-10">
+
+  return (
+    <div className="container mx-auto mt-10">
       <div className="flex justify-center mt-4 mb-8">
         <select
           value={filter}
@@ -142,7 +151,7 @@ const MyArtCraftLists = () => {
                       <span className="tooltip">Edit</span>
                     </button>
                   </Link>
-                  <button onClick={()=>{
+                  <button onClick={() => {
                     handleDelete(craft._id)
                   }} className="text-red-500 hover:text-red-600 transition duration-300">
                     <BsTrash />
@@ -159,7 +168,7 @@ const MyArtCraftLists = () => {
           ))}
       </div>
     </div>
-    );
+  );
 };
 
 export default MyArtCraftLists;
