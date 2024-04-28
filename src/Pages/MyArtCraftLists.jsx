@@ -145,7 +145,7 @@ const MyArtCraftLists = () => {
                   Stock Status: {craft.stock_status}
                 </p>
                 <div className="absolute bottom-4 right-4 flex">
-                  <Link >
+                  <Link to={`/updateCraft/${craft._id}`}>
                     <button className="mr-2 text-blue-500 hover:text-blue-600 transition duration-300">
                       <BsPencilSquare />
                       <span className="tooltip">Edit</span>
