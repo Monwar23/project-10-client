@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const ArtCraftSection = ({ art }) => {
     const {
@@ -27,6 +28,7 @@ const ArtCraftSection = ({ art }) => {
     }, [index, item_name]);
 
     return (
+        <Link to={`/subcategory_name/${subcategory_name}`}>
         <div className="rounded overflow-hidden shadow-lg border border-gray-300">
             <img src={photo} alt={item_name} className="w-full h-72 object-cover" />
             <div className="px-6 py-4">
@@ -35,6 +37,7 @@ const ArtCraftSection = ({ art }) => {
                 <p className="text-purple-700 text-base mt-2">Category : {subcategory_name}</p>
             </div>
         </div>
+        </Link>
     );
 };
 

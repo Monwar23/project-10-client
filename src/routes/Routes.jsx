@@ -13,6 +13,7 @@ import AllArtCraftItems from "../Pages/AllArtCraftItems";
 import PrivateRoutes from "../Private/PrivateRoutes";
 import Details from "../Pages/Details";
 import Update from "../Pages/Update";
+import CategoryData from "../Pages/CategoryData";
 
 const router = createBrowserRouter([
     {
@@ -56,9 +57,13 @@ const router = createBrowserRouter([
                 element:<PrivateRoutes><Update></Update></PrivateRoutes>,
                 loader:({params})=>fetch(`http://localhost:5000/craftSection/${params.id}`)
             },
+            {
+                path:'/subcategory_name/:subcategory_name',
+                element:<CategoryData></CategoryData>
+            }
 
         ]
     },
 ]);
 
-export default router
+export default router;
