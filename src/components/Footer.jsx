@@ -8,14 +8,14 @@ const Footer = () => {
         <footer className="footer py-10 px-20 bg-blue-200 text-base-content mt-20">
             <aside>
                 <MdDraw className="text-6xl text-blue-600"></MdDraw>
-                <Link to="/" className="text-xl font-medium"><span className="font-bold text-blue-600">Art</span>Hive</Link>
+                <Link to="/" className="text-xl font-medium text-black"><span className="font-bold text-blue-600">Art</span>Hive</Link>
                 <div className="flex gap-2 mt-10">
-                    <FaFacebookF className="text-lg"></FaFacebookF>
-                    <FaTwitter className="text-lg"></FaTwitter>
-                    <FaInstagram className="text-lg"></FaInstagram>
-                    <FaLinkedin className="text-lg"></FaLinkedin>
+                    <FaFacebookF className="text-lg text-black"></FaFacebookF>
+                    <FaTwitter className="text-lg text-black"></FaTwitter>
+                    <FaInstagram className="text-lg text-black"></FaInstagram>
+                    <FaLinkedin className="text-lg text-black"></FaLinkedin>
                 </div> 
-    <p className="mt-6"><Fade>Copyright © 2024 - All right reserved</Fade></p>
+    <p className="mt-6 text-black"><Fade>Copyright © 2024 - All right reserved</Fade></p>
             </aside>
             <nav className="text-black">
                 <h6 className="footer-title">SERVICES</h6>

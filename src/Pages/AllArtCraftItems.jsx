@@ -27,11 +27,11 @@ const AllArtCraftItems = () => {
                         <tbody>
                             {crafts.map((craft, index) => (
                                 <tr key={index} className={index % 2 === 0 ? "bg-gray-100" : "bg-white"}>
-                                    <td className="border px-4 py-2">{craft.item_name}</td>
-                                    <td className="border px-4 py-2">{craft.short_description}</td>
-                                    <td className="border px-4 py-2">{craft.subcategory_name}</td>
-                                    <td className="border px-4 py-2">${craft.price}</td>
-                                    <td className="border px-4 py-2">
+                                    <td className="border px-4 py-2 text-black">{craft.item_name}</td>
+                                    <td className="border px-4 py-2 text-black">{craft.short_description}</td>
+                                    <td className="border px-4 py-2 text-black">{craft.subcategory_name}</td>
+                                    <td className="border px-4 py-2 text-black">${craft.price}</td>
+                                    <td className="border px-4 py-2 text-black">
                                         <Link to={`/details/${craft._id}`}>
                                             <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg">
                                                 <span className="text-blue-100">View Details</span>
