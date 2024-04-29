@@ -20,7 +20,7 @@ const Review = () => {
             date: "1 week ago"
         },
         {
-            stars: 4,
+            stars: 5,
             verified: true,
             text: "Excellent, fast delivery!",
             author: "Hales",
