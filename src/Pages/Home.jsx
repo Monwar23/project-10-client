@@ -9,6 +9,7 @@ import ArtGallery from "../components/ArtGallery";
 import Review from "../components/Review";
 import { GoStarFill } from "react-icons/go";
 import { MdOutlineStarHalf } from "react-icons/md";
+import Extra from "../components/Extra";
 
 
 const Home = () => {
@@ -40,7 +41,7 @@ const Home = () => {
                 </div>
             </Fade>
 
-            <div className="grid md:grid-cols-2 gap-5 mt-10">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10">
                 {
                     crafts.slice(0, 6).map(craft => <CraftItemSection key={craft._id} craft={craft}></CraftItemSection>)
                 }
@@ -52,7 +53,7 @@ const Home = () => {
                     <p className="text-center mt-4">Dive into the world of creativity with our diverse range of art & craft subcategories. <br /> Each subcategory offers unique  opportunities for expression and discovery.</p>
                 </div>
             </Fade>
-            <div className="grid md:grid-cols-2 gap-5 mt-10">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10">
                 {
                     arts.slice(0, 6).map(art => <ArtCraftSection key={art._id} art={art}></ArtCraftSection>)
                 }
@@ -66,6 +67,7 @@ const Home = () => {
                 </div>
             </Fade>
             <ArtGallery></ArtGallery>
+            <Extra></Extra>
             <Fade>
                 <div className="mt-14 border-b-2 border-blue-300 pb-4">
                     <h2 className="text-3xl text-blue-400 font-bold text-center">
