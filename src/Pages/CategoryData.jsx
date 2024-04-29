@@ -11,7 +11,7 @@ const CategoryData = () => {
     const [arts, setArts] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/craftSection/subcategory_name/${subcategory_name}`)
+        fetch(`https://project-10-server-gray.vercel.app/craftSection/subcategory_name/${subcategory_name}`)
             .then(res => res.json())
             .then(arts => {
                 setArts(arts);

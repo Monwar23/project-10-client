@@ -29,7 +29,7 @@ const AddCraftItem = () => {
         const info = { photo, item_name, subcategory_name, short_description, price, rating, customization, processing_time, stock_status, email, name }
         console.log(info);
 
-        fetch('http://localhost:5000/addArt&Craft', {
+        fetch('https://project-10-server-gray.vercel.app/addArt&Craft', {
             method: "POST",
             headers: { "Content-type": "application/json" },
             body: JSON.stringify(info)

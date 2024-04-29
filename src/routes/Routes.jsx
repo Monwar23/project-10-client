@@ -24,12 +24,12 @@ const router = createBrowserRouter([
             {
                 path: '/',
                 element: <Home></Home>,
-                loader:()=>fetch('http://localhost:5000/craftSection')
+                loader:()=>fetch('https://project-10-server-gray.vercel.app/craftSection')
             },
             {
                 path:"/details/:id",
                 element:<PrivateRoutes><Details></Details></PrivateRoutes>,
-                loader:({params})=>fetch(`http://localhost:5000/craftSection/${params.id}`)
+                loader:({params})=>fetch(`https://project-10-server-gray.vercel.app/craftSection/${params.id}`)
             },
             {
                 path: '/login',
@@ -50,12 +50,12 @@ const router = createBrowserRouter([
             {
                 path: '/allArtCraftItems',
                 element: <AllArtCraftItems></AllArtCraftItems>,
-                loader:()=>fetch('http://localhost:5000/craftSection')
+                loader:()=>fetch('https://project-10-server-gray.vercel.app/craftSection')
             },
             {
                 path:"/updateCraft/:id",
                 element:<PrivateRoutes><Update></Update></PrivateRoutes>,
-                loader:({params})=>fetch(`http://localhost:5000/craftSection/${params.id}`)
+                loader:({params})=>fetch(`https://project-10-server-gray.vercel.app/craftSection/${params.id}`)
             },
             {
                 path:'/subcategory_name/:subcategory_name',

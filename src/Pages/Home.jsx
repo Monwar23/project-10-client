@@ -8,7 +8,6 @@ import { Helmet } from "react-helmet";
 import ArtGallery from "../components/ArtGallery";
 import Review from "../components/Review";
 import { GoStarFill } from "react-icons/go";
-import { MdOutlineStarHalf } from "react-icons/md";
 import Extra from "../components/Extra";
 
 
@@ -20,7 +19,7 @@ const Home = () => {
 
     useEffect(() => {
 
-        fetch('http://localhost:5000/artSection')
+        fetch('https://project-10-server-gray.vercel.app/artSection')
             .then(res => res.json())
             .then(data => {
                 setArts(data)

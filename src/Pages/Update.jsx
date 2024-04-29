@@ -41,7 +41,7 @@ const Update = () => {
         const info = { photo, item_name, subcategory_name, short_description, price, rating, customization, processing_time, stock_status }
         console.log(info);
 
-        fetch(`http://localhost:5000/craftSection/${_id}`, {
+        fetch(`https://project-10-server-gray.vercel.app/craftSection/${_id}`, {
             method: "PUT",
             headers: { "Content-type": "application/json" },
             body: JSON.stringify(info)

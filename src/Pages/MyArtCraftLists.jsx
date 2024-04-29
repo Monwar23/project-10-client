@@ -20,7 +20,7 @@ const [control,setControl]=useState(false)
 
   useEffect(() => {
 
-    fetch(`http://localhost:5000/craftSection/email/${user?.email}`)
+    fetch(`https://project-10-server-gray.vercel.app/craftSection/email/${user?.email}`)
       .then(res => res.json())
       .then(data => {
         setCrafts(data)
@@ -45,7 +45,7 @@ const [control,setControl]=useState(false)
       if (result.isConfirmed) {
 
 
-        fetch(`http://localhost:5000/craftSection/${_id}`,{
+        fetch(`https://project-10-server-gray.vercel.app/craftSection/${_id}`,{
           method:'DELETE'
         })
           .then(res => res.json())
