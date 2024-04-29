@@ -10,6 +10,7 @@ const CraftItemSection = ({ craft }) => {
         subcategory_name,
         short_description,
         rating,
+        price
     } = craft;
 
     return (
@@ -19,6 +20,7 @@ const CraftItemSection = ({ craft }) => {
                 <h2 className="text-xl font-semibold mb-2 text-blue-800">{item_name}</h2>
                 <p className="text-gray-600 mb-2">{subcategory_name}</p>
                 <p className="text-base mb-4">{short_description}</p>
+                <p className="text-blue-600 mb-2">${price}</p>
                 <div className="flex items-center">
                     <Bounce>
                         <FaStar className="text-yellow-500" />

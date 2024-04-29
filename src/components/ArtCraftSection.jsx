@@ -1,5 +1,6 @@
 import { Typewriter } from 'react-simple-typewriter';
 import { Link } from 'react-router-dom';
+import { Fade } from 'react-awesome-reveal';
 
 const ArtCraftSection = ({ art }) => {
     const {
@@ -11,7 +12,8 @@ const ArtCraftSection = ({ art }) => {
     } = art;
 
     return (
-        <Link to={`/subcategory_name/${subcategory_name}`}>
+      <Fade>
+          <Link to={`/subcategory_name/${subcategory_name}`}>
         <div className="relative rounded-lg overflow-hidden shadow-lg border border-gray-300 transition-transform hover:scale-105">
             <img src={photo} alt={item_name} className="w-full h-72 object-cover" />
             <div className="px-6 py-4">
@@ -32,6 +34,7 @@ const ArtCraftSection = ({ art }) => {
             </div>
         </div>
         </Link>
+      </Fade>
     );
 };
 
