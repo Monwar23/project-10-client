@@ -1,4 +1,4 @@
-# ArtHub
+# ArtHive
 
 
 ## Features : 
