@@ -15,7 +15,7 @@ const CraftItemSection = ({ craft }) => {
 
     return (
         <Slide direction="left">
-            <div className="card relative bg-blue-100 shadow-xl p-4 rounded-lg transition-transform hover:scale-105">
+            <div className="card relative bg-blue-100 shadow-xl p-4 rounded-lg transition-transform hover:scale-105 h-full">
                 <img src={photo} className="w-full h-60 mb-4 rounded-md" alt={item_name} />
                 <h2 className="text-xl font-semibold mb-2 text-blue-800">{item_name}</h2>
                 <p className="text-gray-600 mb-2">{subcategory_name}</p>

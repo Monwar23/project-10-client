@@ -14,7 +14,7 @@ const ArtCraftSection = ({ art }) => {
     return (
       <Fade>
           <Link to={`/subcategory_name/${subcategory_name}`}>
-        <div className="relative rounded-lg overflow-hidden shadow-lg border border-gray-300 transition-transform hover:scale-105">
+        <div className="relative rounded-lg overflow-hidden shadow-lg border border-gray-300 transition-transform hover:scale-105 h-full">
             <img src={photo} alt={item_name} className="w-full h-60 object-cover" />
             <div className="px-6 py-4">
               <div className='font-bold text-xl mb-2 text-blue-600'>
