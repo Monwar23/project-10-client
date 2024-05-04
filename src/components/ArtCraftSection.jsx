@@ -19,7 +19,7 @@ const ArtCraftSection = ({ art }) => {
             <div className="px-6 py-4">
               <div className='font-bold text-xl mb-2 text-blue-600'>
               <Typewriter  
-                    words={[item_name]} 
+                    words={[subcategory_name]} 
                     loop={false} 
                     cursor
                     cursorStyle='_'
@@ -30,7 +30,7 @@ const ArtCraftSection = ({ art }) => {
                 />
               </div>
                 <p className=" text-sm">{short_description}</p> 
-                <p className="text-purple-700 text-base mt-2">Category : {subcategory_name}</p>
+                <p className="text-purple-700 text-base mt-2"> {item_name}</p>
             </div>
         </div>
         </Link>

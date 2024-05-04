@@ -62,11 +62,11 @@ const AddCraftItem = () => {
                         </div>
                         <div className="mb-3">
                             <label htmlFor="item_name" className="block font-medium text-white">Item Name</label>
-                            <input type="text" id="item_name" name="item_name" placeholder="Item Name" className="mt-1 block w-full rounded-md shadow-sm h-10 px-2 border-4 border-blue-400" />
+                            <input type="text" id="item_name" name="item_name" placeholder="Item Name" required className="mt-1 block w-full rounded-md shadow-sm h-10 px-2 border-4 border-blue-400" />
                         </div>
                         <div className="mb-3">
                             <label htmlFor="subcategory_name" className="text-white block font-medium">Subcategory Name</label>
-                            <select id="subcategory_name" name="subcategory_name" className="mt-1 block w-full rounded-md shadow-sm h-10 px-2 border-4 border-blue-400">
+                            <select id="subcategory_name" name="subcategory_name" required className="mt-1 block w-full rounded-md shadow-sm h-10 px-2 border-4 border-blue-400">
                                 <option value="Landscape Painting">Landscape Painting</option>
                                 <option value="Portrait Drawing">Portrait Drawing</option>
                                 <option value="Portrait Canvas">Portrait Canvas</option>
@@ -79,11 +79,11 @@ const AddCraftItem = () => {
 
                         <div className="mb-3">
                             <label htmlFor="short_description" className="block font-medium text-white">Short Description</label>
-                            <textarea id="short_description" name="short_description" placeholder="Short Description" rows="3" className="mt-1 block w-full  rounded-md shadow-sm px-2 border-4 border-blue-400"></textarea>
+                            <textarea id="short_description" name="short_description" placeholder="Short Description" required rows="3" className="mt-1 block w-full  rounded-md shadow-sm px-2 border-4 border-blue-400"></textarea>
                         </div>
                         <div className="mb-3">
                             <label htmlFor="price" className="block font-medium text-white">Price</label>
-                            <input type="number" id="price" name="price" placeholder="Price" step="0.01" className="mt-1 block w-full  rounded-md shadow-sm h-10 px-2 border-4 border-blue-400" />
+                            <input type="number" id="price" name="price" placeholder="Price" required step="0.01" className="mt-1 block w-full  rounded-md shadow-sm h-10 px-2 border-4 border-blue-400" />
                         </div>
                         <div className="mb-3">
                             <label htmlFor="rating" className="block font-medium text-white">Rating</label>
