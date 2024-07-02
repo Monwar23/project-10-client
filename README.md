@@ -20,18 +20,6 @@ This project is a dynamic web application designed to manage art and craft items
 
 - Utilizes toast notifications to provide real-time feedback on user actions such as successful logins, item additions, or deletions.
 
-## Selected Categories : 
-
-### Painting and Drawing-
-- Landscape Painting: Mountain view canvas, Forest based Landscape
-painting,
-- Portrait Drawing: Pencil Sketch Portrait, Ink Outline Portrait, Acrylic
-Portrait Canvas
-- Watercolour Painting: Floral Watercolor Art, Animal Watercolor Portrait
-- Oil Painting: Realistic Oil Portrait, Abstract Oil Painting
-- Charcoal Sketching: Figure Charcoal Sketch, Architectural Charcoal
-Drawing
-- Cartoon Drawing: Comic Strip Drawing, Superhero Cartoon Design
 
 ## Technologies Used :
 
