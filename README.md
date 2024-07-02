@@ -35,16 +35,16 @@ Drawing
 
 ## Technologies Used :
 
-##Front-end:
+- Front-end:
 HTML, CSS, Tailwind CSS
 JavaScript, React
 Responsive Design
 
-##Back-end:
+- Back-end:
 Node.js, Express.js
 MongoDB
 
-##Authentication:
+- Authentication:
 Firebase Authentication
 
 ## Package Name : 
