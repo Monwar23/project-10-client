@@ -1,10 +1,12 @@
 # ArtHive
 
-## Live URL : https://arthive.netlify.app/
+## Live URL: https://arthive.netlify.app/
 
+## Description :
+
+This project is a dynamic web application designed to manage art and craft items, ensuring a secure and personalized user experience. The platform integrates robust authentication mechanisms, including social login options, to provide secure access to user-specific features and data. Users can create, read, update, and delete (CRUD) their listings, fully managing their items. A personalized dashboard allows users to manage their profiles, view their activity history, and handle favorite items. The website is optimized for various devices and screen sizes, ensuring a seamless experience across desktops, tablets, and smartphones. Additionally, real-time feedback through toast notifications enhances user interactions by providing instant alerts for actions such as successful logins, item additions, and deletions.
 
 ## Features : 
-
 
 - Utilizes authentication mechanisms to provide secure access to user-specific features and data.
 
