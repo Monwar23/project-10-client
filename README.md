@@ -1,4 +1,4 @@
-# ArtHive
+# Art and Craft Management Platform-ArtHive
 
 ## Live URL: https://arthive.netlify.app/
 
