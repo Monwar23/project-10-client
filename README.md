@@ -46,4 +46,16 @@ Firebase Authentication
 - [React-swiper](https://swiperjs.com/react)
 - [React-Helmet](https://www.npmjs.com/package/react-helmet)
 
-
+## How to Run  :
+- git clone
+- npm install
+- create .env.local
+- in .env.local file updated:
+VITE_APIKEY=Your firebase code
+VITE_AUTHDOMAIN=Your firebase code
+VITE_PROJECTID=Your firebase code
+VITE_STORAGEBUCKET=Your firebase code
+VITE_MESSAGINGSENDERID=Your firebase code
+VITE_APPID=Your firebase code
+- npm run dev
+- proper run go to Server : [Server Site](https://github.com/Monwar23/project-10-server) and updated all fetch url to localhost
