@@ -33,6 +33,19 @@ Portrait Canvas
 Drawing
 - Cartoon Drawing: Comic Strip Drawing, Superhero Cartoon Design
 
+## Technologies Used :
+
+##Front-end:
+HTML, CSS, Tailwind CSS
+JavaScript, React
+Responsive Design
+
+##Back-end:
+Node.js, Express.js
+MongoDB
+
+##Authentication:
+Firebase Authentication
 
 ## Package Name : 
 
@@ -44,4 +57,5 @@ Drawing
 - [React-icons](https://www.npmjs.com/package/react-icons)
 - [React-swiper](https://swiperjs.com/react)
 - [React-Helmet](https://www.npmjs.com/package/react-helmet)
+
 
